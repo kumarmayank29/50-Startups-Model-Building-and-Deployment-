@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
 import pickle,joblib
-model=pickle.load(open('profit.pkl','rb'))
+model=pickle.load(open('profit.pkl','rb')) #Saved pickle file for 50 startups
 trans=joblib.load('column')
 app=Flask(__name__)
 
